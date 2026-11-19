@@ -155,7 +155,7 @@
         "max_error": 0.005,
         "min_clearance": 0.25,
         "min_connection": 0.1,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.254,
@@ -609,11 +609,11 @@
       },
       {
         "netclass": "Power",
-        "pattern": "+5v"
+        "pattern": "+5V"
       },
       {
         "netclass": "Power",
-        "pattern": "+3v3"
+        "pattern": "+3V3"
       },
       {
         "netclass": "AnalogGND",
@@ -626,6 +626,14 @@
       {
         "netclass": "Branch",
         "pattern": "*M?_OUT_*"
+      },
+      {
+        "netclass": "Battery",
+        "pattern": "*BT1*"
+      },
+      {
+        "netclass": "Battery",
+        "pattern": "*S1-Pad3*"
       }
     ]
   },
